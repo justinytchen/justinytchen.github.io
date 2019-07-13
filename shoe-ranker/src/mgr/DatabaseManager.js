@@ -3,20 +3,22 @@ class DatabaseManager{
         this.firebaseRef = db.database().ref("data");
     }
 
-    pushToFirebase(value) {
+    writeEloData(map) {
+        var value = JSON.stringify(map);
+        // console.log(map);
+        // console.log(value);
         this.firebaseRef.child("eloMap").set({value});
     }
 
-    getFirebaseData(callback){
-        this.firebaseRef.on('value', dataSnapshot => {
+    getEloData(callback){
+        this.firebaseRef.once('value', dataSnapshot => {
             let items = [];
             dataSnapshot.forEach(childSnapshot => {
                 let item = childSnapshot.val();
                 item['key'] = childSnapshot.key;
                 items.push(item);
             });
-            console.log("items", items);
-            callback(items);
+            callback(JSON.parse(items[0].value));
         });
     }
 } export default DatabaseManager;
