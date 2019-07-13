@@ -12,7 +12,7 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flexDirection: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -36,12 +36,21 @@
   display:flex;
 }
 
+.shoesContainer h2{
+  font-family: Lato;
+  font-weight: 200;
+  font-size: 20px;
+}
+
 .shoeContainer{
-  max-width: 50% !important;
+  width: 50% !important;
+  align-items: center
+}
+
+.shoeContainer div{
+  flex: 1 1 auto;
 }
 
 .shoeImage{
-  max-width: 100% !important;
-  max-height: 100% !important;
-
+  max-width: 50% !important;
 }

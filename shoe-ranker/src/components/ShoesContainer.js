@@ -29,15 +29,17 @@ class ShoesContainer extends React.Component {
         if(!this.state.status)
             display = "flex";
         const style = {
-            "maxWidth": "100%",
+            "maxWidth": "60%",
         };
 
         const dispStyle = {
             "display": display,
-            "flex-direction": "column"
+            "flexDirection": "column"
         };
 
-        console.log(this.props.shoe1, this.props.shoe2);
+        var shoe1Name = this.props.shoe1.name.replace(/&quot;/g, '\\"');
+        var shoe2Name = this.props.shoe2.name.replace(/&quot;/g, '\\"');
+
         return (
             <div>
                 <div>
@@ -46,6 +48,7 @@ class ShoesContainer extends React.Component {
 
                 <div className = "shoesContainer">
                     <div className = "shoeContainer" style = {dispStyle} >
+                        <div></div>
                         <img
                             className = "shoeImage"
                             style={style}
@@ -53,10 +56,10 @@ class ShoesContainer extends React.Component {
                             onLoad={this.handleImage1Loaded.bind(this)}
                             onError={this.handleImage1Errored.bind(this)}
                         />
-                        <h2>{this.props.shoe1.name}</h2>
                     </div>
 
                     <div className = "shoeContainer" style = {dispStyle}>
+                        <div></div>
                         <img
                             className = "shoeImage"
                             style={style}
@@ -64,10 +67,17 @@ class ShoesContainer extends React.Component {
                             onLoad={this.handleImage2Loaded.bind(this)}
                             onError={this.handleImage2Errored.bind(this)}
                         />
-                        <h2>{this.props.shoe2.name}</h2>
                     </div>
                 </div>
+                <div className = "shoesContainer">
+                    <div className = "shoeContainer" style = {dispStyle} >
+                        <h2>{shoe1Name}</h2>
+                    </div>
 
+                    <div className = "shoeContainer" style = {dispStyle}>
+                        <h2>{shoe2Name}</h2>
+                    </div>
+                </div>
 
 
 
