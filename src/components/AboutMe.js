@@ -14,12 +14,14 @@ export default class AboutMe extends Component {
                             <img src={pfp} alt="" className="pfp"/>
                         </div>
                         <div className="single-post-content-wrapper about-me-description">
-                            <p>I'm currently a third year student at the University of California, San Diego pursuing a Bachelor of Science
+                            <p>I am a third year student at the University of California, San Diego pursuing a Bachelor of Science
                                 in Computer Science. Prior to college, I lived in the suburbs of Cupertino, in the heart
-                                of the Silicon Valley, where I naturally developed a passion for anything tech-related.</p>
+                                of the Silicon Valley, where I naturally developed a passion for anything tech-related.
+                                Currently, I am looking for internship opportunities in Summer 2020.
+                            </p>
 
                             <p>I have experience created/used various APIs, worked with different databases, and developed friendly user interfaces.
-                                I've used tools/frameworks like React, MySQL, and Splunk. In the past, I have worked at Lacework, a cloud security startup
+                                In addition, I am familiar with many tools/frameworks such as React, MySQL, and Splunk. In the past, I have worked at Lacework, a cloud security startup
                                 based in Mountain View CA, and American Express, in New York City. I will be
                                 also working as a research assistant at Vecchio Lab in the fall</p>
                             <p>In my free time, I enjoy learning
