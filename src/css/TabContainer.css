@@ -17,3 +17,7 @@
 .tab-content div .container{
     padding-right:10%;
 }
+
+.nav-item a{
+    outline: none !important;
+}

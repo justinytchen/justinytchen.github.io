@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import ImageGallery from 'react-image-gallery';
-export default class Photography extends Component {
-    render(){
 
-        const imageURLs = [
+export default class Photography extends Component {
+    constructor(props) {
+        super(props);
+        this.imageURLs = this.shuffle([
             "https://live.staticflickr.com/65535/48117911036_83ed6d0b61_o.jpg",
             "https://live.staticflickr.com/65535/48392894377_a414bf12a8_o.jpg",
             "https://live.staticflickr.com/65535/48110572008_f3f5b7d5c6_o.jpg",
@@ -19,14 +20,34 @@ export default class Photography extends Component {
             "https://live.staticflickr.com/4866/45437591205_79a552d448_o.jpg",
             "https://live.staticflickr.com/4912/46350554201_389d3e4128_o.jpg",
             "https://live.staticflickr.com/4891/31409334207_d8b006528e_o.jpg"
-        ];
+        ]);
+    }
 
+    shuffle(array) {
+        var currentIndex = array.length, temporaryValue, randomIndex;
 
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+    }
+
+    render() {
         var images = [];
-        for(var i in imageURLs){
+        for (var i in this.imageURLs) {
             images.push({
-                original: imageURLs[i],
-                thumbnail: imageURLs[i]
+                original: this.imageURLs[i],
+                thumbnail: this.imageURLs[i]
             });
         }
 
