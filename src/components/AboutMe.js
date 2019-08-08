@@ -17,7 +17,7 @@ export default class AboutMe extends Component {
                             <p>I am a third year student at the University of California, San Diego pursuing a Bachelor of Science
                                 in Computer Science. Prior to college, I lived in the suburbs of Cupertino, in the heart
                                 of the Silicon Valley, where I naturally developed a passion for anything tech-related.
-                                Currently, I am looking for internship opportunities in Summer 2020.
+                                Currently, I am looking for internship opportunities for Summer 2020.
                             </p>
 
                             <p>I have experience created/used various APIs, worked with different databases, and developed friendly user interfaces.
