@@ -34,7 +34,7 @@ export default class Education extends Component {
                                     <li className="course-item">CSE 21: Mathematics for Algorithm and Systems</li>
                                     <li className="course-item">CSE 100: Advanced Data Structures</li>
                                     <li className="course-item">MATH 183: Statistical Methods</li>
-                                    <li className="course-item">CSE 101: Design & Analysis of Algorithm </li>
+                                    <li className="course-item">CSE 101: Design & Analysis of Algorithms </li>
                                     <li className="course-item">CSE 150: Intro to AI: Search & Reasoning</li>
                                 </ul>
                             </Col>
