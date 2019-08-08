@@ -1,0 +1,68 @@
+@media (hover: none) and (pointer: coarse) {
+    .jumbotron{
+        margin:10px !important;
+    }
+
+    .nav-item a{
+        text-align: center !important;
+    }
+
+    .main .main-container{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .employer h5{
+        font-size:16px;
+    }
+
+    .location h5{
+        font-size:16px;
+    }
+
+    .role h6{
+        font-size:14px;
+    }
+
+    .time h6{
+        font-size:14px;
+    }
+
+    .experience-el{
+        flex-wrap: nowrap !important;
+    }
+
+    .description{
+        padding-top: 10px;
+        text-align: left;
+    }
+
+    #courses-taken{
+        padding-top: 10px;
+        flex-direction: column !important;
+    }
+
+    #courses-taken div ul{
+        margin:0;
+    }
+
+    #education-descriptor{
+        flex-direction: column !important;
+    }
+
+    #education-descriptor div{
+         text-align: left !important;
+    }
+
+    #tab-container-tab-photography{
+        visibility: hidden !important;
+    }
+
+    .course-item{
+        font-size: 13px;
+    }
+
+    .work-container div div p{
+        padding-bottom: 20px !important;
+    }
+}

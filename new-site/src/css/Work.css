@@ -1,0 +1,23 @@
+.icon-link {
+    display: inline-block;
+}
+
+.icon-link img {
+    display: block;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+}
+
+.icon-link:hover img {
+    opacity: 0.33;
+}
+
+.work-container p{
+    font-size:14px;
+    padding-left:10%;
+    padding-right:10%;
+    text-align: center;
+}

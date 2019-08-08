@@ -1,0 +1,16 @@
+.image-gallery-image img{
+    max-height: 400px;
+    width: auto !important;
+}
+
+.image-gallery-thumbnails-wrapper{
+    visibility: hidden;
+}
+
+.image-gallery-right-nav{
+    outline:none !important;
+}
+
+.image-gallery-left-nav{
+    outline:none !important;
+}
