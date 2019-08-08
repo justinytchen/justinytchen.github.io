@@ -15,7 +15,7 @@ export default class TabContainer extends Component {
             <div className="main-container col-sm-12">
                 <Tab.Container id="tab-container" defaultActiveKey="aboutme">
                     <Row>
-                        <Col sm={2} >
+                        <Col sm={2} id="tab-nav">
                             <Nav variant="pills" className="flex-column">
                                 <Nav.Item>
                                     <Nav.Link eventKey="aboutme">about me</Nav.Link>

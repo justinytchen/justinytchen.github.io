@@ -21,3 +21,8 @@
 .nav-item a{
     outline: none !important;
 }
+
+#tab-nav{
+    padding-left: 0;
+    padding-right: 0;
+}

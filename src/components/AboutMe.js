@@ -8,7 +8,7 @@ export default class AboutMe extends Component {
     render() {
         return (
             <section>
-                <div className="container">
+                <div className="about-me container">
                     <div className="col-md-12">
                         <div className="image-wrapper float-left pr-3">
                             <img src={pfp} alt="" className="pfp"/>
@@ -31,7 +31,7 @@ export default class AboutMe extends Component {
 
                         </div>
                     </div>
-                    <Button variant="outline-dark"
+                    <Button variant="outline-dark" id="download-resume"
                             href="https://drive.google.com/file/d/1JNLrkhHpC7GvdEChPxdhB5Z_VusBbbYd/view"><FaDownload/>{" Download Resume"}
                     </Button>
                 </div>
