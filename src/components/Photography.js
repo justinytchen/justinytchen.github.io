@@ -60,6 +60,30 @@ export default class Photography extends Component {
             {
                 "static":"https://live.staticflickr.com/4891/31409334207_d8b006528e_o.jpg",
                 "flickr":"https://www.flickr.com/photos/justin-chen/31409334207"
+            },
+            {
+                "static":"https://live.staticflickr.com/65535/48106606502_36d7d0e811_o.jpg",
+                "flickr":"https://www.flickr.com/photos/justin-chen/48106606502"
+            },
+            {
+                "static":"https://live.staticflickr.com/65535/40510732313_b2d6984db6_o.jpg",
+                "flickr":"https://www.flickr.com/photos/justin-chen/40510732313"
+            },
+            {
+                "static":"https://live.staticflickr.com/4865/32478071618_84d3725a84_o.jpg",
+                "flickr":"https://www.flickr.com/photos/justin-chen/32478071618"
+            },
+            {
+                "static":"https://live.staticflickr.com/4839/45437590515_846e87248a_o.jpg",
+                "flickr":"https://www.flickr.com/photos/justin-chen/45437590515/"
+            },
+            {
+                "static":"https://live.staticflickr.com/4883/45437588585_f55fecb5c8_o.jpg",
+                "flickr":"https://www.flickr.com/photos/justin-chen/45437588585/"
+            },
+            {
+                "static":"https://live.staticflickr.com/65535/48110585858_58d8c81ca9_o.jpg",
+                "flickr":"https://www.flickr.com/photos/justin-chen/48110585858"
             }
         ]
     );
