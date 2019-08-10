@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import resumeData from '../resume.json';
+import data from '../data.json';
 
 export default class Experience extends Component {
     render(){
@@ -14,8 +14,9 @@ export default class Experience extends Component {
     }
 
     getAllResumeItems(){
-        var resumeItems = []
-        var i = 0
+        var resumeItems = [];
+        var i = 0;
+        var resumeData = data.experience;
         for(var e in resumeData){
             resumeItems.push(<div key = {i++}>{this.getResumeItem(resumeData[e])}</div>)
         }

@@ -26,3 +26,12 @@
     right: 0;
     z-index: -4;
 }
+
+.icon-link{
+    color:white;
+    padding:5px;
+}
+
+.icon-link:hover{
+    color: #222222;
+}
