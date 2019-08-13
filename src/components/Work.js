@@ -27,7 +27,7 @@ export default class Work extends Component {
                     </Col>
                     <Col sm={4} >
                         <h5>Research Poster</h5>
-                        <a className= "icon-link" href="bit.ly/JC_BU_RISE">
+                        <a className= "icon-link" href="https://bit.ly/JC_BU_RISE">
                             <img className="img-thumbnail" src={poster} style={imgStyle}/>
                         </a>
                         <p>Boston University Research in Science and Engineering Program </p>
