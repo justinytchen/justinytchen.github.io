@@ -16,7 +16,7 @@ export default class Work extends Component {
                         <a className= "icon-link" href="https://pathh-detour.herokuapp.com">
                             <img className="img-thumbnail" alt = "" src={detour} style = {imgStyle}/>
                         </a>
-                        <p>A route planning web app for finding landmarks along a path (Project for CSE 110: Software Engineer) </p>
+                        <p>A route planning web app for finding landmarks along a path (Project for CSE 110: Software Engineering) </p>
                     </Col>
                     <Col sm={4} >
                         <h5>Research Paper</h5>
