@@ -13,8 +13,8 @@ function App() {
     <div className="App">
 
         <div className="jumbotron jumbotron bg-cover" style = {{
-            "margin-left": "150px",
-            "margin-right": "150px"
+            "marginLeft": "150px",
+            "marginRight": "150px"
         }}>
             <div className="overlay"></div>
             <div className="container">

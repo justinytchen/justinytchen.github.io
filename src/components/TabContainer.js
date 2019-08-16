@@ -10,10 +10,34 @@ import Work from "./Work";
 import Photography from "./Photography";
 
 export default class TabContainer extends Component {
+
+    constructor(props){
+        super(props);
+        var curUrl = window.location.href;
+        var lastIndex = curUrl.lastIndexOf("/#");
+
+        const validTabs = ["aboutme", "education", "experience", "work", "photography"]
+        var curTab = validTabs[0]
+        if(lastIndex > 0){
+            var tab = curUrl.substring(lastIndex + 2)
+            if(validTabs.includes(tab)){
+                curTab = tab;
+            }
+        }
+        this.state = {
+            tabKey: curTab
+        };
+    }
+
+    setTabKey(e){
+        this.setState({tabKey: e})
+    }
+
     render() {
+        window.history.pushState(this.state.tabKey, this.state.tabKey, '/#' + this.state.tabKey);
         return (
             <div className="main-container col-sm-12">
-                <Tab.Container id="tab-container" defaultActiveKey="aboutme">
+                <Tab.Container id="tab-container" defaultActiveKey="aboutme" activeKey={this.state.tabKey} onSelect={this.setTabKey.bind(this)}>
                     <Row>
                         <Col sm={2} id="tab-nav">
                             <Nav variant="pills" className="flex-column">

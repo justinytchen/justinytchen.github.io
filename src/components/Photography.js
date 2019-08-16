@@ -31,7 +31,7 @@ export default class Photography extends Component {
         return (
             <div className='image-gallery-image'>
                 <a href={item.flickrLink}>
-                <img src = {item.original} />
+                <img src = {item.original}  alt = ""/>
                 </a>
             </div>
         );
