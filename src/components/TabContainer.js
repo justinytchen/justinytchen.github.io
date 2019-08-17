@@ -33,6 +33,15 @@ export default class TabContainer extends Component {
         this.setState({tabKey: e})
     }
 
+    renderNavItem(key, title){
+        let curUrl = window.location.href.substring(0, window.location.href.lastIndexOf("/") + 1);
+        return (
+            <Nav.Item>
+                <Nav.Link eventKey={key} href={curUrl + "#" + key}>{title}</Nav.Link>
+            </Nav.Item>
+        );
+    }
+
     render() {
         window.history.pushState(this.state.tabKey, this.state.tabKey, '/#' + this.state.tabKey);
         return (
@@ -41,21 +50,11 @@ export default class TabContainer extends Component {
                     <Row>
                         <Col sm={2} id="tab-nav">
                             <Nav variant="pills" className="flex-column">
-                                <Nav.Item>
-                                    <Nav.Link eventKey="aboutme">about me</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="education">education</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="experience">experience</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="work">work</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="photography">photography</Nav.Link>
-                                </Nav.Item>
+                                {this.renderNavItem("aboutme", "about me")}
+                                {this.renderNavItem("education", "education")}
+                                {this.renderNavItem("experience", "experience")}
+                                {this.renderNavItem("work", "work")}
+                                {this.renderNavItem("photography", "photography")}
                             </Nav>
                         </Col>
                         <Col className = "tab-content" sm={10}>
