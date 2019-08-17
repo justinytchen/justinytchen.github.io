@@ -9,9 +9,13 @@
     -moz-transition: all 0.1s linear;
     -ms-transition: all 0.1s linear;
     -o-transition: all 0.1s linear;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 .icon-link:hover img {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
     opacity: 0.33;
 }
 
