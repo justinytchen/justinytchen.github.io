@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "REACT_APP_GIT_SHA_MESSAGE=`git log -1 --pretty=%B` REACT_APP_GIT_SHA_DATE=`git log -1 --pretty=format:%ct` REACT_APP_GIT_SHA=`git rev-parse --short HEAD` react-scripts start",
-    "build": "react-scripts build",
+    "build": "REACT_APP_GIT_SHA_MESSAGE=`git log -1 --pretty=%B` REACT_APP_GIT_SHA_DATE=`git log -1 --pretty=format:%ct` REACT_APP_GIT_SHA=`git rev-parse --short HEAD` react-scripts build",
     "test": "react-scripts src/test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
