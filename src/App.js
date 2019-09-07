@@ -7,8 +7,6 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FaFlickr } from 'react-icons/fa';
 
 function App() {
-
-
   return (
     <div className="App">
 
