@@ -32,7 +32,7 @@ export default class AboutMe extends Component {
                         </div>
                     </div>
                     <Button variant="outline-dark" id="download-resume"
-                            href="https://drive.google.com/file/d/1JNLrkhHpC7GvdEChPxdhB5Z_VusBbbYd/view"><FaDownload/>{" Download Resume"}
+                            href="https://drive.google.com/file/d/119J5Ki64YCTU_fnPr1cUtGbSwOuw4wh2/view"><FaDownload/>{" Download Resume"}
                     </Button>
                 </div>
             </section>
