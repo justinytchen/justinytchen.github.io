@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import pfp from "../images/pfp2.jpg"
 import Button from "react-bootstrap/Button"
 import {FaDownload} from 'react-icons/fa';
-import Resume from "../Resume.pdf";
 
 export default class AboutMe extends Component {
 
@@ -33,7 +32,7 @@ export default class AboutMe extends Component {
                         </div>
                     </div>
                     <Button variant="outline-dark" id="download-resume"
-                            href={Resume}><FaDownload/>{" Download Resume"}
+                            href={process.env.PUBLIC_URL + '/Resume.pdf'}><FaDownload/>{" Download Resume"}
                     </Button>
                 </div>
             </section>
