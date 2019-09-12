@@ -3,7 +3,6 @@ import Col from "react-bootstrap/Col";
 import poster from "../images/poster.jpg";
 import research from "../images/research.jpg";
 import detour from "../images/detour.jpg";
-import ResearchPoster from "../ResearchPoster.pdf";
 
 export default class Work extends Component {
     render(){
@@ -28,7 +27,7 @@ export default class Work extends Component {
                     </Col>
                     <Col sm={4} >
                         <h5>Research Poster</h5>
-                        <a className= "icon-link" href={ResearchPoster}>
+                        <a className= "icon-link" href={process.env.PUBLIC_URL + '/ResearchPoster.pdf'}>
                             <img className="img-thumbnail" alt = "" src={poster} style={imgStyle}/>
                         </a>
                         <p>Boston University Research in Science and Engineering Program </p>
