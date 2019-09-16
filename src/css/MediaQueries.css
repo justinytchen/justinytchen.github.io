@@ -54,8 +54,8 @@
          text-align: left !important;
     }
 
-    #tab-container-tab-photography{
-        visibility: hidden !important;
+    #tab-nav{
+        padding-bottom: 40px;
     }
 
     .course-item{
