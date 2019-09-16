@@ -58,6 +58,11 @@
         padding-bottom: 40px;
     }
 
+    #tab-container-tabpane-photography .nocolor div div img {
+        -webkit-filter: grayscale(0%) !important; /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%) !important;
+    }
+
     .course-item{
         font-size: 13px;
     }
