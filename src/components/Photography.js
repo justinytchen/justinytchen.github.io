@@ -37,19 +37,16 @@ export default class Photography extends Component {
     }
 
     mouseEntered(){
-        console.log("mouseEntered");
         this.setState({
             color: 'color'
         });
     }
 
     mouseExited(){
-        console.log("mouseLeave");
         this.setState({color: 'nocolor'});
     }
 
     render() {
-        console.log(this.state.color);
         return (
             <div
                 className={this.state.color}
