@@ -25,7 +25,7 @@ export default class AboutMe extends Component {
                                 based in Mountain View CA, and American Express, in New York City.
                                 I have created/used many APIs, worked with different databases, and developed
                                 friendly user interfaces; I am familiar with many tools/frameworks such as React, MySQL, and Splunk.
-                                I will be also working as a research assistant at Vecchio Lab in the fall</p>
+                            </p>
                             <p>In my free time, I enjoy learning
                                 new board games, playing and watching basketball, and practicing photography.</p>
 
