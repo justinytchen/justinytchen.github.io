@@ -57,7 +57,7 @@ export default class Photography extends Component {
                     photos={this.imageURLs}
                     margin = {5}
                     direction={'row'}
-                    targetRowHeight = {250}
+                    targetRowHeight = {500}
                 />
             </div>
 
