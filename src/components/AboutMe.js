@@ -16,14 +16,14 @@ export default class AboutMe extends Component {
                         <div className="single-post-content-wrapper about-me-description">
                             <p>I am a third year student at the University of California, San Diego pursuing a Bachelor
                                 of Science
-                                in Computer Science. Prior to college, I lived in the suburbs of Cupertino, in the heart
+                                in Computer Science. Before college, I lived in the suburbs of Cupertino, in the heart
                                 of the Silicon Valley, where I naturally developed a passion for anything tech-related.
-                                Currently, I am looking for internship opportunities for Summer 2020.
                             </p>
 
                             <p>In the past, I have worked at Lacework, a cloud security startup
-                                based in Mountain View CA, and American Express, in New York City.
-                                I have created/used many APIs, worked with different databases, and developed
+                                based in Mountain View CA, and American Express, in New York City. Next summer, I will be working
+                                at Microsoft at their headquarters in Redmond, Washington.
+                                I have created/used many APIs, worked with different database systems, and developed
                                 friendly user interfaces; I am familiar with many tools/frameworks such as React, MySQL, and Splunk.
                             </p>
                             <p>In my free time, I enjoy learning
