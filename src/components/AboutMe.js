@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import pfp from "../images/pfp2.jpg"
+import pfp from "../images/pfp.jpg"
 import Button from "react-bootstrap/Button"
 import {FaDownload} from 'react-icons/fa';
 
@@ -21,9 +21,9 @@ export default class AboutMe extends Component {
                             </p>
 
                             <p>In the past, I have worked at Lacework, a cloud security startup
-                                based in Mountain View CA, and American Express, in New York City. Next summer, I will be working
+                                based in Mountain View, California, and American Express, in New York City. Next summer, I will be working
                                 at Microsoft at their headquarters in Redmond, Washington.
-                                I have created/used many APIs, worked with different database systems, and developed
+                                I have experience creating/using many APIs, interacting with different database systems, and developing
                                 friendly user interfaces; I am familiar with many tools/frameworks such as React, MySQL, and Splunk.
                             </p>
                             <p>In my free time, I enjoy learning
