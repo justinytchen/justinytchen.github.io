@@ -20,13 +20,19 @@ export default class TabContainer extends Component {
         const validTabs = ["aboutme", "education", "experience", "work", "photography"]
         var curTab = validTabs[0]
         if(lastIndex > 0){
+            console.log("zzz");
             var tab = curUrl.substring(lastIndex + 2)
             if(validTabs.includes(tab)){
                 curTab = tab;
             }
         }
+
+        curUrl = window.location.href.substring(window.location.href.indexOf('/'), window.location.href.lastIndexOf('/'))
+        console.log("aaa", curUrl.substring(curUrl.indexOf('/') + 1, curUrl.lastIndexOf('/')));
+
         this.state = {
-            tabKey: curTab
+            tabKey: curTab,
+            middle: window.location.href.substring(window.location.href.indexOf('/') + 1, window.location.href.lastIndexOf('/'))
         };
     }
 
@@ -36,6 +42,7 @@ export default class TabContainer extends Component {
 
     renderNavItem(key, title){
         let curUrl = window.location.href.substring(0, window.location.href.lastIndexOf("/") + 1);
+        console.log("curURL", window.location.href, curUrl);
         return (
             <Nav.Item>
                 <Nav.Link eventKey={key} href={curUrl + "#" + key}>{title}</Nav.Link>
@@ -44,7 +51,9 @@ export default class TabContainer extends Component {
     }
 
     render() {
-        window.history.pushState(this.state.tabKey, this.state.tabKey, '/#' + this.state.tabKey);
+        console.log(window.location.href);
+        console.log(this.state.tabKey, this.state.tabKey, '/#' + this.state.tabKey);
+        window.history.pushState(this.state.tabKey, this.state.tabKey, '/' + this.state.middle + '/#' + this.state.tabKey);
         return (
             <div className="main-container col-sm-12">
                 <Tab.Container id="tab-container" defaultActiveKey="aboutme" activeKey={this.state.tabKey} onSelect={this.setTabKey.bind(this)}>
