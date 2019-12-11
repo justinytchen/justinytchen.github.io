@@ -26,28 +26,47 @@ export default class Education extends Component {
                             </div>
                         </div>
                         <div className={"experience-el row"} id="courses-taken">
+                            <Col sm={12} >
+                                <h1>Upper Division CS Classes</h1>
+                            </Col>
                             <Col sm={6} >
                                 <ul>
-                                    <li className="course-item">CSE 11: Intro to Computer Science & OO</li>
-                                    <li className="course-item">CSE 12: Basic Data Structures & OO Design</li>
-                                    <li className="course-item">CSE 20: Discrete Mathematics</li>
-                                    <li className="course-item">CSE 21: Mathematics for Algorithm and Systems</li>
                                     <li className="course-item">CSE 100: Advanced Data Structures</li>
-                                    <li className="course-item">MATH 183: Statistical Methods</li>
                                     <li className="course-item">CSE 101: Design & Analysis of Algorithms </li>
-                                    <li className="course-item">CSE 150: Intro to AI: Search & Reasoning</li>
+                                    <li className="course-item">CSE 105: Theory of Computation</li>
+                                    <li className="course-item">CSE 110: Software Engineering</li>
+                                    <li className="course-item">CSE 132A: Database System Principles </li>
                                 </ul>
                             </Col>
                             <Col sm={6} >
                                 <ul>
-                                    <li className="course-item">MATH 18: Linear Algebra</li>
-                                    <li className="course-item">CSE 15L: Software Tools & Techniques Lab</li>
-                                    <li className="course-item">MATH 20C: Multivariable Calculus</li>
-                                    <li className="course-item">CSE 30: Computer Organization & Systems Programming</li>
-                                    <li className="course-item">CSE 105: Theory of Computation</li>
-                                    <li className="course-item">CSE 132A: Database System Principles </li>
-                                    <li className="course-item">CSE 110: Software Engineering</li>
                                     <li className="course-item">CSE 140/140L: Component & Design Technology/Digital Systems</li>
+                                    <li className="course-item">CSE 150: Intro to AI: Search & Reasoning</li>
+                                    <li className="course-item">CSE 151 Intro to AI: A Statistical Approach (Machine Learning)</li>
+                                    <li className="course-item">CSE 156: Statistical NLP</li>
+                                </ul>
+                            </Col>
+                            <Col sm={12} >
+                            </Col>
+                            <Col sm={6} >
+                                <h1>Lower Division CS Classes</h1>
+                                <ul>
+                                    <li className="course-item">CSE 11: Intro to Computer Science & OO</li>
+                                    <li className="course-item">CSE 12: Basic Data Structures & OO Design</li>
+                                    <li className="course-item">CSE 15L: Software Tools & Techniques Lab</li>
+                                    <li className="course-item">CSE 20: Discrete Mathematics</li>
+                                    <li className="course-item">CSE 21: Mathematics for Algorithm and Systems</li>
+                                    <li className="course-item">CSE 30: Computer Organization & Systems Programming</li>
+                                </ul>
+                            </Col>
+                            <Col sm={6} >
+                                <h1>Other Technical Classes</h1>
+                                <ul>
+                                    <li className="course-item">MATH 18: Linear Algebra</li>
+                                    <li className="course-item">MATH 20C: Multivariable Calculus</li>
+                                    <li className="course-item">MATH 183: Statistical Methods</li>
+                                    <li className="course-item">COGS 108: Data Science in Practice</li>
+                                    <li className="course-item">LIGN 165: Computational Linguistics</li>
                                 </ul>
                             </Col>
                         </div>

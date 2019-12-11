@@ -21,7 +21,7 @@ export default class AboutMe extends Component {
                             </p>
 
                             <p>In the past, I have worked at Lacework, a cloud security startup
-                                based in Mountain View, California, and American Express, in New York City. Next summer, I will be working
+                                based in Mountain View, California, and American Express, a financial services corporation in New York City. Next summer, I will be working
                                 at Microsoft at their headquarters in Redmond, Washington.
                                 I have experience creating/using many APIs, interacting with different database systems, and developing
                                 friendly user interfaces; I am familiar with many tools/frameworks such as React, MySQL, and Splunk.

@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import data from '../data.json';
+import Places from "./Places";
 
 export default class Experience extends Component {
     render(){
         return (
             <div className="container">
 
+                {/*<Places />*/}
                 <div className="col-md-12">
                     {this.getAllResumeItems()}
                 </div>

@@ -1,3 +1,7 @@
 .course-item{
     text-align: left;
 }
+
+#courses-taken div h1{
+    font-size: 20px
+}

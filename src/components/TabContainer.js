@@ -8,6 +8,7 @@ import Experience from "./Experience";
 import Education from "./Education";
 import Work from "./Work";
 import Photography from "./Photography";
+import MapTab from "./MapTab";
 
 export default class TabContainer extends Component {
 
