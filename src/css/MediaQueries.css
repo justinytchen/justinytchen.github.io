@@ -31,6 +31,10 @@
     .experience-el{
         flex-wrap: nowrap !important;
     }
+    
+    .experience-el div h1{
+        padding-top: 10px;
+    }
 
     .description{
         padding-top: 10px;
