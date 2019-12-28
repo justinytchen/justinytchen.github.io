@@ -4,6 +4,10 @@
         margin:10px !important;
     }
 
+    #courses-taken{
+        padding-bottom: 30px;
+    }
+
     .nav-item a{
         text-align: center !important;
     }
