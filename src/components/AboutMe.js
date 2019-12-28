@@ -14,7 +14,7 @@ export default class AboutMe extends Component {
                             <img src={pfp} alt="" className="pfp"/>
                         </div>
                         <div className="single-post-content-wrapper about-me-description">
-                            <p>I am a third year student at the University of California, San Diego pursuing a Bachelor
+                            <p>Hello! I am a third year student at the University of California, San Diego pursuing a Bachelor
                                 of Science
                                 in Computer Science. Before college, I lived in the suburbs of Cupertino, in the heart
                                 of the Silicon Valley, where I naturally developed a passion for anything tech-related.
