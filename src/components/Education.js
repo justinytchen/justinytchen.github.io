@@ -88,7 +88,7 @@ export default class Education extends Component {
                                     {this.getClassItem("LIGN 165")}
                                 </ul>
                             </Col>
-                            <ReactTooltip multiline = {true}/>
+                            {/*<ReactTooltip multiline = {true} type = "light" border = {true}/>*/}
                         </div>
                     </div>
                 </div>
