@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import pfp from "../images/pfp.jpg"
+import pfp from "../images/pfp5.jpg"
 import Button from "react-bootstrap/Button"
 import {FaDownload} from 'react-icons/fa';
 

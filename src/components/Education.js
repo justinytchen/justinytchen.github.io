@@ -1,7 +1,26 @@
 import React, {Component} from 'react';
 import Col from "react-bootstrap/Col";
+import ReactTooltip from 'react-tooltip';
+import data from '../data.json';
 
 export default class Education extends Component {
+
+    getClassItem(courseName){
+        var description = data.classes[courseName].description.split(". ");
+
+        var tooltipString = ""
+        for(var i = 0 ; i < description.length; i++){
+            tooltipString += description[i];
+            if(i < description.length - 1){
+                tooltipString += "<br>";
+            }
+        }
+
+        return (
+            <li className="course-item" data-tip={tooltipString}>{courseName + ": " + data.classes[courseName].name}</li>
+        );
+    }
+
     render(){
         return (
             <div className="container">
@@ -31,19 +50,19 @@ export default class Education extends Component {
                             </Col>
                             <Col sm={6} >
                                 <ul>
-                                    <li className="course-item">CSE 100: Advanced Data Structures</li>
-                                    <li className="course-item">CSE 101: Design & Analysis of Algorithms </li>
-                                    <li className="course-item">CSE 105: Theory of Computation</li>
-                                    <li className="course-item">CSE 110: Software Engineering</li>
-                                    <li className="course-item">CSE 132A: Database System Principles </li>
+                                    {this.getClassItem("CSE 100")}
+                                    {this.getClassItem("CSE 101")}
+                                    {this.getClassItem("CSE 105")}
+                                    {this.getClassItem("CSE 110")}
+                                    {this.getClassItem("CSE 132A")}
                                 </ul>
                             </Col>
                             <Col sm={6} >
                                 <ul>
-                                    <li className="course-item">CSE 140/140L: Component & Design Technology/Digital Systems</li>
-                                    <li className="course-item">CSE 150: Intro to AI: Search & Reasoning</li>
-                                    <li className="course-item">CSE 151 Intro to AI: A Statistical Approach (Machine Learning)</li>
-                                    <li className="course-item">CSE 156: Statistical NLP</li>
+                                    {this.getClassItem("CSE 140/140L")}
+                                    {this.getClassItem("CSE 150")}
+                                    {this.getClassItem("CSE 151")}
+                                    {this.getClassItem("CSE 156")}
                                 </ul>
                             </Col>
                             <Col sm={12} >
@@ -51,24 +70,25 @@ export default class Education extends Component {
                             <Col sm={6} >
                                 <h1>Lower Division CS Classes</h1>
                                 <ul>
-                                    <li className="course-item">CSE 11: Intro to Computer Science & OO</li>
-                                    <li className="course-item">CSE 12: Basic Data Structures & OO Design</li>
-                                    <li className="course-item">CSE 15L: Software Tools & Techniques Lab</li>
-                                    <li className="course-item">CSE 20: Discrete Mathematics</li>
-                                    <li className="course-item">CSE 21: Mathematics for Algorithm and Systems</li>
-                                    <li className="course-item">CSE 30: Computer Organization & Systems Programming</li>
+                                    {this.getClassItem("CSE 11")}
+                                    {this.getClassItem("CSE 12")}
+                                    {this.getClassItem("CSE 15L")}
+                                    {this.getClassItem("CSE 20")}
+                                    {this.getClassItem("CSE 21")}
+                                    {this.getClassItem("CSE 30")}
                                 </ul>
                             </Col>
                             <Col sm={6} >
                                 <h1>Other Technical Classes</h1>
                                 <ul>
-                                    <li className="course-item">MATH 18: Linear Algebra</li>
-                                    <li className="course-item">MATH 20C: Multivariable Calculus</li>
-                                    <li className="course-item">MATH 183: Statistical Methods</li>
-                                    <li className="course-item">COGS 108: Data Science in Practice</li>
-                                    <li className="course-item">LIGN 165: Computational Linguistics</li>
+                                    {this.getClassItem("MATH 18")}
+                                    {this.getClassItem("MATH 20C")}
+                                    {this.getClassItem("MATH 183")}
+                                    {this.getClassItem("COGS 108")}
+                                    {this.getClassItem("LIGN 165")}
                                 </ul>
                             </Col>
+                            <ReactTooltip multiline = {true}/>
                         </div>
                     </div>
                 </div>

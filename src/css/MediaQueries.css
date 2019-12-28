@@ -1,3 +1,4 @@
+/*@media only screen and (max-width: 800px) {*/
 @media (hover: none) and (pointer: coarse) {
     .jumbotron{
         margin:10px !important;
@@ -5,6 +6,10 @@
 
     .nav-item a{
         text-align: center !important;
+    }
+
+    .__react_component_tooltip{
+        visibility: hidden !important;
     }
 
     .main .main-container{
@@ -31,9 +36,14 @@
     .experience-el{
         flex-wrap: nowrap !important;
     }
-    
+
     .experience-el div h1{
         padding-top: 10px;
+    }
+
+    .experience-el div ul li{
+        list-style: none;
+        text-align:center;
     }
 
     .description{
