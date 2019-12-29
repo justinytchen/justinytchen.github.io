@@ -62,6 +62,7 @@
 
     #courses-taken div ul{
         margin:0;
+        padding:0;
     }
 
     #education-descriptor{
@@ -87,5 +88,9 @@
 
     .work-container div div p{
         padding-bottom: 20px !important;
+    }
+
+    .about-me{
+        padding-bottom: 30px;
     }
 }
