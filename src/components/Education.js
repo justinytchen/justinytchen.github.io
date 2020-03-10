@@ -54,12 +54,15 @@ export default class Education extends Component {
                                     {this.getClassItem("CSE 101")}
                                     {this.getClassItem("CSE 105")}
                                     {this.getClassItem("CSE 110")}
+                                    {this.getClassItem("CSE 120")}
+                                    {this.getClassItem("CSE 127")}
                                     {this.getClassItem("CSE 132A")}
                                 </ul>
                             </Col>
                             <Col sm={6} >
                                 <ul>
                                     {this.getClassItem("CSE 140/140L")}
+                                    {this.getClassItem("CSE 141/141L")}
                                     {this.getClassItem("CSE 150")}
                                     {this.getClassItem("CSE 151")}
                                     {this.getClassItem("CSE 156")}
