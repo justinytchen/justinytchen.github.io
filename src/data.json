@@ -274,6 +274,28 @@
   "experience": [
     {
       "role": "Software Engineering Intern",
+      "employer": "Microsoft",
+      "location": "Remote",
+      "time": "June 2020 - September 2020",
+      "description": [
+        "Created a handler in C# that enables semantic highlighting support for the PowerShell Extension in VS Code",
+        "Developed a PowerShell module to enable Codespaces in remote environments for Windows, MacOS, and Linux to allow for remote debugging on VS Code Online",
+        "Worked on enhancements and bug fixes for the PowerShell kernel in Jupyter Lab"
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "employer": "UC San Diego ProtoLab",
+      "location": "La Jolla, CA",
+      "time": "November 2019 - present",
+      "description": [
+        "Helped develop ProtoTeams, a web app that aids team formation via small group interactions",
+        "Used the Meteor platform (React + Node + MongoDB integration) to develop a robust and intuitive app for users",
+        "Deployed in various classroom settings to test for flexibility and scalability"
+      ]
+    },
+    {
+      "role": "Software Engineering Intern",
       "employer": "American Express",
       "location": "New York City, NY",
       "time": "June 2019 - August 2019",
@@ -287,7 +309,7 @@
       "role": "Tutor",
       "employer": "UC San Diego CSE Department",
       "location": "La Jolla, CA",
-      "time": "September 2018 - December 2019",
+      "time": "September 2018 - March 2020",
       "description": [
         "Helped run CSE 11, the introduction computer science course, and CSE 30, Computer Organization and Systems Programming",
         "Provided 1 on 1 help for students during lab hours",

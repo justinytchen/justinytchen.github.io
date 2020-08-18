@@ -11,6 +11,14 @@ export default class Work extends Component {
         return (
             <div className="work-container">
                 <div className={"row"}>
+                    <Col sm={4} >
+                        <h5>PowerShell Semantic Highlighting</h5>
+                        <a className= "icon-link" href={"https://devblogs.microsoft.com/powershell/semantic-highlighting-in-the-powershell-preview-extension-for-visual-studio-code/"}>
+                            <img className="img-thumbnail" alt = "" src={"https://devblogs.microsoft.com/powershell/wp-content/uploads/sites/30/2020/07/syntax-highlighting.png"} style={imgStyle}/>
+                        </a>
+                        <p>One of the projects during my Microsoft internship</p>
+
+                    </Col>
                     <Col sm={4}>
                         <h5>Detour</h5>
                         <a className= "icon-link" href="https://pathh-detour.herokuapp.com">
@@ -25,6 +33,8 @@ export default class Work extends Component {
                         </a>
                         <p>Phase Cascade Lattice Rectifier Array: An Exactly Solvable Nonlinear Network Circuit</p>
                     </Col>
+                </div>
+                <div className={"row"}>
                     <Col sm={4} >
                         <h5>Research Poster</h5>
                         <a className= "icon-link" href={process.env.PUBLIC_URL + '/ResearchPoster.pdf'}>
@@ -32,6 +42,10 @@ export default class Work extends Component {
                         </a>
                         <p>Boston University Research in Science and Engineering Program </p>
 
+                    </Col>
+                    <Col sm={4} >
+                    </Col>
+                    <Col sm={4} >
                     </Col>
                 </div>
             </div>
