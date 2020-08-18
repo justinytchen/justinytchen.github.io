@@ -21,13 +21,12 @@ export default class AboutMe extends Component {
                             </p>
 
                             <p>In the past, I have worked at Lacework, a cloud security startup
-                                based in Mountain View, California, and American Express, a financial services corporation in New York City. The past summer, I interned (remotely)
+                                based in Mountain View, California, and American Express, a financial services corporation in New York City. This past summer, I interned (remotely)
                                 at Microsoft on the PowerShell team.
-                                I have experience creating/using many APIs, interacting with different database systems, and developing
-                                friendly user interfaces; I am familiar with many tools/frameworks such as React, MySQL, and Splunk.
+                                Through these experiences, I have learned how to create and use different APIs, interact with different database systems, and develop
+                                friendly user interfaces; I have also become familiar with many tools/frameworks such as React, MySQL, and Splunk.
                             </p>
-                            <p>In my free time, I enjoy learning
-                                new board games, playing and watching basketball, and practicing photography.</p>
+                            <p>In my free time, I enjoy learning new board games, playing and watching basketball, and practicing photography.</p>
 
                         </div>
                     </div>
