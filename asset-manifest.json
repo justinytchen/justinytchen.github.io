@@ -1,23 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8044c8b.chunk.css",
-    "main.js": "/static/js/main.9cc14d4b.chunk.js",
-    "main.js.map": "/static/js/main.9cc14d4b.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.1c29fa96.chunk.css": "/static/css/2.1c29fa96.chunk.css",
-    "static/js/2.9b6abd29.chunk.js": "/static/js/2.9b6abd29.chunk.js",
-    "static/js/2.9b6abd29.chunk.js.map": "/static/js/2.9b6abd29.chunk.js.map",
+    "main.css": "/static/css/main.a8282b77.chunk.css",
+    "main.js": "/static/js/main.186edb50.chunk.js",
+    "main.js.map": "/static/js/main.186edb50.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a58fdc0a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a58fdc0a.js.map",
+    "static/css/2.0f39ba22.chunk.css": "/static/css/2.0f39ba22.chunk.css",
+    "static/js/2.2109fcd2.chunk.js": "/static/js/2.2109fcd2.chunk.js",
+    "static/js/2.2109fcd2.chunk.js.map": "/static/js/2.2109fcd2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.67dd87b5244f34694204def8fcaa0f4a.js": "/precache-manifest.67dd87b5244f34694204def8fcaa0f4a.js",
+    "precache-manifest.5f4f041ddeb0299b0d38cd3e0568e3e2.js": "/precache-manifest.5f4f041ddeb0299b0d38cd3e0568e3e2.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.1c29fa96.chunk.css.map": "/static/css/2.1c29fa96.chunk.css.map",
-    "static/css/main.e8044c8b.chunk.css.map": "/static/css/main.e8044c8b.chunk.css.map",
+    "static/css/2.0f39ba22.chunk.css.map": "/static/css/2.0f39ba22.chunk.css.map",
+    "static/css/main.a8282b77.chunk.css.map": "/static/css/main.a8282b77.chunk.css.map",
+    "static/js/2.2109fcd2.chunk.js.LICENSE.txt": "/static/js/2.2109fcd2.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/bgimage.6108172e.jpg",
     "static/media/close-button.svg": "/static/media/close-button.6a3accc4.svg",
     "static/media/detour.jpg": "/static/media/detour.6293eb21.jpg",
     "static/media/pfp5.jpg": "/static/media/pfp5.7bfec36e.jpg",
     "static/media/poster.jpg": "/static/media/poster.8cfb2ab6.jpg",
     "static/media/research.jpg": "/static/media/research.1d7117ed.jpg"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a58fdc0a.js",
+    "static/css/2.0f39ba22.chunk.css",
+    "static/js/2.2109fcd2.chunk.js",
+    "static/css/main.a8282b77.chunk.css",
+    "static/js/main.186edb50.chunk.js"
+  ]
 }
