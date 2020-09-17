@@ -7,7 +7,7 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <div>
+                <main>
                     <Switch>
                         <Route path='/aboutme' children={<MainContainer tab="aboutme"/>} />
                         <Route path='/education' children={<MainContainer tab="education"/>} />
@@ -15,8 +15,9 @@ class App extends Component {
                         <Route path='/work' children={<MainContainer tab="work"/>} />
                         <Route path='/photography' children={<MainContainer tab="photography"/>} />
                         <Route path='/' children={<MainContainer tab="aboutme"/>} />
+                        <Route render={() => <Redirect to={{pathname: "/"}} />} />
                     </Switch>
-                </div>
+                </main>
             </Router>
         );
     }
