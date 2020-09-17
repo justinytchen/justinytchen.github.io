@@ -9,13 +9,22 @@ class App extends Component {
             <Router>
                 <main>
                     <Switch>
-                        <Route path='/aboutme' children={<MainContainer tab="aboutme"/>} />
-                        <Route path='/education' children={<MainContainer tab="education"/>} />
-                        <Route path='/experience' children={<MainContainer tab="experience"/>} />
-                        <Route path='/work' children={<MainContainer tab="work"/>} />
-                        <Route path='/photography' children={<MainContainer tab="photography"/>} />
-                        <Route path='/' children={<MainContainer tab="aboutme"/>} />
-                        <Route render={() => <Redirect to={{pathname: "/"}} />} />
+                        <Route path='/aboutme' render={(props) => (
+                            <MainContainer {...props} tab="aboutme" />
+                        )}></Route>
+                        <Route path='/education' render={(props) => (
+                            <MainContainer {...props} tab="education" />
+                        )}></Route>
+                        <Route path='/experience' render={(props) => (
+                            <MainContainer {...props} tab="experience" />
+                        )}></Route>
+                        <Route path='/work' render={(props) => (
+                            <MainContainer {...props} tab="work" />
+                        )}></Route>
+                        <Route path='/photography' render={(props) => (
+                            <MainContainer {...props} tab="photography" />
+                        )}></Route>
+                        <Route render={() => <Redirect to={{ pathname: "/" }} />} />
                     </Switch>
                 </main>
             </Router>
