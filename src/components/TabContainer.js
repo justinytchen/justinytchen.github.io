@@ -16,24 +16,6 @@ export default class TabContainer extends Component {
         super(props);
         var curUrl = window.location.href;
         var lastIndex = curUrl.lastIndexOf("/#");
-
-        const validTabs = ["aboutme", "education", "experience", "work", "photography"]
-        var curTab = validTabs[0]
-        if(lastIndex > 0){
-            console.log("zzz");
-            var tab = curUrl.substring(lastIndex + 2)
-            if(validTabs.includes(tab)){
-                curTab = tab;
-            }
-        }
-
-        curUrl = window.location.href.substring(window.location.href.indexOf('/'), window.location.href.lastIndexOf('/'))
-        console.log("aaa", curUrl.substring(curUrl.indexOf('/') + 1, curUrl.lastIndexOf('/')));
-
-        this.state = {
-            tabKey: curTab,
-            middle: window.location.href.substring(window.location.href.indexOf('/') + 1, window.location.href.lastIndexOf('/'))
-        };
     }
 
     setTabKey(e){
@@ -45,18 +27,15 @@ export default class TabContainer extends Component {
         console.log("curURL", window.location.href, curUrl);
         return (
             <Nav.Item>
-                <Nav.Link eventKey={key} href={curUrl + "#" + key}>{title}</Nav.Link>
+                <Nav.Link eventKey={key} href={curUrl + "" + key}>{title}</Nav.Link>
             </Nav.Item>
         );
     }
 
     render() {
-        console.log(window.location.href);
-        console.log(this.state.tabKey, this.state.tabKey, '/#' + this.state.tabKey);
-        window.history.pushState(this.state.tabKey, this.state.tabKey, '/' + this.state.middle + '/#' + this.state.tabKey);
         return (
             <div className="main-container col-sm-12">
-                <Tab.Container id="tab-container" defaultActiveKey="aboutme" activeKey={this.state.tabKey} onSelect={this.setTabKey.bind(this)}>
+                <Tab.Container id="tab-container" defaultActiveKey="aboutme" activeKey={this.props.tab} onSelect={this.setTabKey.bind(this)}>
                     <Row>
                         <Col sm={2} id="tab-nav">
                             <Nav variant="pills" className="flex-column">
