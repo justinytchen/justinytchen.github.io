@@ -9,6 +9,9 @@ class App extends Component {
             <Router>
                 <main>
                     <Switch>
+                        <Route path='/' render={(props) => (
+                            <MainContainer {...props} tab="aboutme" />
+                        )}></Route>
                         <Route path='/aboutme' render={(props) => (
                             <MainContainer {...props} tab="aboutme" />
                         )}></Route>
